@@ -238,6 +238,17 @@ html {
           justify-content: space-between;
 }
 
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.625rem;
+}
+
 .footer__banking {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -525,14 +536,16 @@ html {
   border-radius: 0.3125rem;
 }
 
+.work-item:last-child {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .work-item:last-child .work-item__wrap {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 49%;
           flex: 0 1 49%;
-}
-
-.work-item:last-child .work-item__img {
-  max-width: 49%;
 }
 
 .work-item__wrap {
@@ -826,6 +839,20 @@ html {
 }
 
 @media (max-width: 56.25rem) {
+  .header .header__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .header .contacts {
+    width: 100%;
+  }
+
   .header__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -838,6 +865,43 @@ html {
 
   .contacts {
     width: 100%;
+  }
+}
+
+@media (max-width: 29.6875rem) {
+  .navigation-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1.25rem;
   }
 }
 
