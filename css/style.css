@@ -543,9 +543,9 @@ html {
 }
 
 .work-item:last-child .work-item__wrap {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 49%;
-          flex: 0 1 49%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 .work-item__wrap {
